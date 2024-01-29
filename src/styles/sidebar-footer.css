@@ -1,20 +1,19 @@
 body{
-    background-color: #87CEEB
-    
+    background-color: #87CEEB;
+    font-family: var(--font-dm-sans);
 }
 .sidebar{
     position: fixed;
     top: 0;
-    left: 0;
+    margin-left: 0px;
     bottom: 0;
     padding: 12px;
-    width: 300px;
+    width: 210px;
 }
 .sidebar_navigation{
     background-color: #8CC84B;
     border-radius: 8px;
     padding: 16px 0 0 16px;
-
 }
 
 .sidebar_navigation .Logo{
@@ -32,9 +31,11 @@ body{
 .sidebar nav ul{
     margin-top: 20px;
     padding: 0 20px 10px 20px;
+    list-style-type: none;
 }
 .sidebar ul li{
     padding: 10px 0;
+    list-style-type: none;
 }
 
 .sidebar nav ul a{
@@ -42,23 +43,25 @@ body{
     text-decoration: none;
     font-weight: 600;
     font-size: 14px;
-    font-family: "DM Sans", sans-serif;
+ 
 }
 
 .library{
+    position: fixed;
     background-color: #8CC84B;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
+    min-block-size: 40px;
     flex-direction: column;
     padding: 4px 8px;
     color: #fff;
     font-weight: 600;
     font-size: 14px;
-    margin-top: 190px;
     margin-left: 10px;
-    width: 290px;
-    
+    width: 200px;
+    height: 370px;
+    margin-top: 200px;
 }
 .library__content{
     display: flex;
@@ -67,13 +70,12 @@ body{
 }
 .library__button{
     display: flex;
-    margin-right: 10px;
+    margin-right: 9px;
     color: #fff;
     background-color: transparent;
     border: 0px;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-align: center;
     text-decoration: none;
     text-transform: none;
@@ -94,7 +96,7 @@ body{
     justify-content: space-between;
     gap: 20px;
     background-color: #7FAF40;
-    color: #b3b3b3;
+    color: #fff;
     font-weight: 600;
     font-size: 14px;
     margin: 8px 0px;
@@ -108,14 +110,13 @@ body{
 .text{
     padding-bottom: 14px;
     color: #fff;
-    font-family: "DM Sans", sans-serif;
 }
 .title{
     font-weight: 700;
 }
 .subtitle{
     font-weight: 500;
-    font-size: 12px;
+    font-size: 0.8rem;
 }
 .section-playlist__button{
     display: flex;
@@ -123,9 +124,8 @@ body{
     background-color: #ffd54f;
     color: #000;
     border-radius: 20px;
-    font-size: 12px;
+    font-size: 0.8rem;
     font-weight: 700;
-    font-family: "DM Sans", sans-serif;
     text-decoration: none;
     text-transform: none;
     padding: 10px;
@@ -154,8 +154,46 @@ body{
     font-size: 12px;
     cursor: pointer;
     width: 180px;
-    margin: 8px;
+    margin: 10px;
     padding: 8px;
     border-radius: 20px;
     
+}
+.disclaimer-premium {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to right, #FFA500, #ffd54f);
+    padding: 15px 40px;
+    display: flex; 
+    justify-content: space-between;
+}
+.disclaimer-premium .text {
+   flex-shrink: 0;
+}
+.disclaimer-premium .disclaimer-premium__title {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button {
+    background-color: #8CC84B;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
 }
